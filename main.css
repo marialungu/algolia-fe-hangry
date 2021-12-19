@@ -112,3 +112,18 @@ body {
   flex-direction: row;
   flex-wrap: wrap; }
 
+.no-results {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.no-results-text {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #f8d16c;
+  margin-top: 3em; }
+
