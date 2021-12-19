@@ -16,7 +16,7 @@
   \****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_components_restaurant_card_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/components/restaurant-card.js */ \"./src/components/restaurant-card.js\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _src_js_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/js/search */ \"./src/js/search.js\");\n\n\n // new AlgoliaSearch().executeSearch();\n\n(0,_src_components_restaurant_card_js__WEBPACK_IMPORTED_MODULE_0__.registerRestaurantContainer)().render();\nalert('connected');\n\n//# sourceURL=webpack://algolia-fe-hangry/./app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_components_restaurant_card_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/components/restaurant-card.js */ \"./src/components/restaurant-card.js\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n\n // new AlgoliaSearch().executeSearch();\n\n(0,_src_components_restaurant_card_js__WEBPACK_IMPORTED_MODULE_0__.registerRestaurantContainer)();\n\n//# sourceURL=webpack://algolia-fe-hangry/./app.js?");
 
 /***/ }),
 
