@@ -118,7 +118,7 @@ body {
   color: #f8d16c; }
 
 .search-result {
-  margin-top: 4em;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -147,4 +147,61 @@ body {
   margin-top: 4em;
   width: 100%;
   justify-content: flex-end; }
+
+.filter-container {
+  width: 15em;
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #818a95; }
+
+.filter-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 10px; }
+
+.filter-icon {
+  font-size: 14px; }
+
+.filter-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.filters-container {
+  margin-top: 20px; }
+
+.facets {
+  display: none;
+  height: 00px;
+  width: 700px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px; }
+  .facets.open {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+.food-facet {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 150px;
+  padding: 5px 15px;
+  align-items: center; }
+
+.food-facet-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
+
+.food-facet-name {
+  width: 130px; }
 
