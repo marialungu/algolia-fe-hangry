@@ -1,0 +1,114 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./main.scss ***!
+  \****************************************************************************************************/
+body {
+  margin: 40px 100px; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.logo-text {
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: #f8d16c; }
+
+.logo {
+  display: flex;
+  flex-direction: row; }
+
+.logo-img {
+  color: #f8d16c;
+  font-size: 34px; }
+
+.primary-btn {
+  border-radius: 18px;
+  color: #182e47;
+  background-color: #f8d16c;
+  border: none;
+  height: 54px;
+  width: 140px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
+
+.search-icon {
+  color: #f8d16c;
+  font-size: 20px;
+  padding: 17px;
+  position: absolute; }
+
+.search-box-container {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  height: 54px;
+  padding: 0 25px 0 45px;
+  width: 700px;
+  border: none;
+  border-radius: 18px;
+  background-color: #f7f9fa;
+  color: #42576e; }
+  .search-box-container:focus-visible {
+    outline: none; }
+
+.restaurant-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 5px;
+  color: #182e47;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.restaurant-subheader {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  color: #818a95;
+  margin-left: 10px; }
+
+.restaurant-image {
+  border-radius: 20px; }
+
+.restaurant-card {
+  width: 300px;
+  margin-top: 50px; }
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px; }
+
+.rating-score {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  color: #f8d16c;
+  margin-right: 10px; }
+
+.star {
+  font-size: 14px;
+  color: #f8d16c; }
+
+.search-result {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
