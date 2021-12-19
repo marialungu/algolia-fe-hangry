@@ -1,0 +1,12 @@
+@import "src/styles/colors";
+
+body {
+  margin: 40px 100px;
+  background-color: $primary;
+}
+
+.main {
+  color: $ink;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
