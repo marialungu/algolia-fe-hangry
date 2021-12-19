@@ -1,33 +1,6 @@
 import AlgoliaSearch from "./search";
 import {renderRestaurantCards} from "../components/render-restaurant-cards";
-import {foodFacetTemplate} from "../components/templates";
-
-const renderFacets = (content) => {
-    // We use the disjunctive facets attribute.
-    const facetValues = content.results.getFacetValues('food_type');
-
-    console.log(facetValues)
-
-    const facets = document.querySelector('#facets');
-    const allElements = (elements) => {
-        elements.map(facet => {
-            console.log(facet)
-            if(facet.count > 4) {
-                const restaurantClone = foodFacetTemplate.content.cloneNode(true);
-                const name = restaurantClone.querySelector('#food-facet-name');
-                const count = restaurantClone.querySelector('#food-facet-count');
-                name.textContent = facet.name
-                count.textContent = facet.count
-                facets.appendChild(restaurantClone)
-            }
-
-        })
-    }
-
-    allElements(facetValues)
-
-}
-
+import {renderFoodFacets} from "../components/render-food-filter";
 
 export class RestaurantContainer {
     constructor() {
@@ -58,7 +31,7 @@ export class RestaurantContainer {
 
         this.helper.on('result', function (content) {
             renderRestaurantCards(content)
-            renderFacets(content)
+            renderFoodFacets(content)
         });
     }
 
