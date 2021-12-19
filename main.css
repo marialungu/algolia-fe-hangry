@@ -179,14 +179,18 @@ body {
 
 .facets {
   display: none;
-  height: 00px;
-  width: 700px;
+  height: 670px;
+  width: 850px;
+  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  background-color: white;
+  position: absolute; }
   .facets.open {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: center; }
 
 .food-facet {
   display: flex;
