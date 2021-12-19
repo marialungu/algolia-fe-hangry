@@ -28,14 +28,7 @@ export class AlgoliaSearch {
     }
 
     executeSearch = () => {
-
-        // console.log(this.helper)
         this.helper.search();
-
-        // this.helper.on('result', function(content) {
-        //     console.log('now empty', content);
-        // });
-        console.log('i executed')
     }
 
     getHelper = () => {
