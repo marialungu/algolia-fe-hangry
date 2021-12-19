@@ -1,5 +1,9 @@
-export const cardTemplate = document.createElement('template');
+export const searchBar = document.createElement('template');
+searchBar.innerHTML = `
+<input class="search-box-container" autocomplete="off" id="search-box-input" placeholder="What do you feel like eating today?..."/>
+`;
 
+export const cardTemplate = document.createElement('template');
 cardTemplate.innerHTML = `
 <div class="restaurant-card">
         <img class="restaurant-image" src="https://source.unsplash.com/random/310x160/?restaurant">

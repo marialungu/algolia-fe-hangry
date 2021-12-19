@@ -1,8 +1,7 @@
-import AlgoliaSearch from "../js/search";
 import {cardTemplate, starOutline, starSolid} from "./templates";
 import {generateStarRating} from "../js/utils";
 
-const renderHits = (content) => {
+export const renderRestaurantCards = (content) => {
     const hits = window._.get(content, ['results', 'hits'])
     const elementsList = document.createElement('div')
     elementsList.setAttribute('class', 'search-result')
@@ -32,36 +31,3 @@ const renderHits = (content) => {
     }
     allElements(hits)
 }
-
-export class RestaurantContainer extends HTMLElement{
-    constructor() {
-        super();
-
-        this.algoliaSearch = new AlgoliaSearch();
-
-        this.helper = null
-        this.search = null;
-
-    }
-
-    connectedCallback(){
-        this.helper = this.algoliaSearch.getHelper()
-        this.search = this.algoliaSearch.executeSearch()
-
-        this.render()
-    }
-
-    render() {
-        this.search
-
-        this.helper.on('result', function (content) {
-            renderHits(content)
-        });
-        console.log('working', this.helper)
-        this.textContent = 'test'
-    }
-
-}
-
-export const registerRestaurantContainer = () => customElements.define('restaurant-container', RestaurantContainer);
-
