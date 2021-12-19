@@ -12,12 +12,15 @@ const renderFacets = (content) => {
     const allElements = (elements) => {
         elements.map(facet => {
             console.log(facet)
-            const restaurantClone = foodFacetTemplate.content.cloneNode(true);
-            const name = restaurantClone.querySelector('#food-facet-name');
-            const count = restaurantClone.querySelector('#food-facet-count');
-            name.textContent = facet.name
-            count.textContent = facet.count
-            facets.appendChild(restaurantClone)
+            if(facet.count > 4) {
+                const restaurantClone = foodFacetTemplate.content.cloneNode(true);
+                const name = restaurantClone.querySelector('#food-facet-name');
+                const count = restaurantClone.querySelector('#food-facet-count');
+                name.textContent = facet.name
+                count.textContent = facet.count
+                facets.appendChild(restaurantClone)
+            }
+
         })
     }
 
