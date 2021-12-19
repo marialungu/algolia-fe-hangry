@@ -1,12 +1,33 @@
 @import "src/styles/colors";
+@import "src/styles/typography";
+@import "src/styles/components";
 
 body {
   margin: 40px 100px;
-  background-color: $primary;
 }
 
-.main {
-  color: $ink;
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo-text {
+  @include hero-styled
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-img {
+  color: $primary;
+  font-size: 34px;
+}
+
+.primary-btn {
+  @include primary-button;
+  @include button-large;
+  @include h3-styled;
 }
