@@ -3,10 +3,11 @@ const apiKey = '253e1b38b67534943884ddee5c7bc2d7';
 const index = 'fe_restaurants';
 
 export class AlgoliaSearch {
-    constructor() {
+    constructor(coordinates) {
+        console.log('here', coordinates)
         const client = algoliasearch(applicationID, apiKey);
         this.helper = algoliasearchHelper(client, index, {
-            aroundLatLngViaIP: true,
+            // aroundLatLng: String(coordinates.latitude + "," + coordinates.longitude),
             page: 0,
             facets: ['food_type', 'rounded_stars_count', 'payment_options']
         });

@@ -39,3 +39,11 @@ starSolid.innerHTML = `<i class="fas fa-star star"></i>`
 
 export const starOutline = document.createElement('template')
 starOutline.innerHTML = `<i class="far fa-star star"></i>`
+
+export const foodFacetTemplate = document.createElement('template')
+foodFacetTemplate.innerHTML = `
+    <div class="food-facet">
+        <div class="food-facet-text food-facet-name" id="food-facet-name"></div>
+        <div class="food-facet-text" id="food-facet-count"></div>
+    </div>
+`;

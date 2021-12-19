@@ -28,19 +28,32 @@
             Get started
         </button>
     </header>
+
+    <section class="filters-container">
+        <div class="filter-container" id="food-type">
+            <div class="filter-name">
+                <i class="fas fa-utensils filter-icon"></i>
+                <div class="filter-text">Cuisine/Food Type</div>
+            </div>
+            <i class="fas fa-caret-down filter-arrow"></i>
+        </div>
+    </section>
+
+    <div id="facets" class="facets"></div>
+
     <section id="container"></section>
 
-    <div class="pagination">
+    <section class="pagination">
         <button class="medium-btn pagination-btn" id="previous">
             Previous
         </button>
         <button class="medium-btn" id="next">
             Next
         </button>
-    </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@3.4.2/dist/algoliasearch.helper.min.js"></script>
     <script src="dist/application.js"></script>
-    </body>
+</body>
 </html>
