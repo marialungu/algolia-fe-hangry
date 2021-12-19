@@ -5,7 +5,10 @@ const index = 'fe_restaurants';
 export class AlgoliaSearch {
     constructor() {
         const client = algoliasearch(applicationID, apiKey);
-        this.helper = algoliasearchHelper(client, index);
+        this.helper = algoliasearchHelper(client, index, {
+            aroundLatLngViaIP: true,
+            facets: ['food_type', 'rounded_stars_count', 'payment_options']
+        });
     }
 
     executeSearch = () => {
