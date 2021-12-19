@@ -11,6 +11,7 @@
     <title>Hangry - Cool places to eat</title>
 
     <script src="https://kit.fontawesome.com/b160839a2a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
 
 </head>
 <body>
@@ -28,18 +29,14 @@
         </button>
     </header>
 <!--    <search></search>-->
-<!--    <section id="container">-->
+    <section id="container"></section>
 
-<!--    </section>-->
+    <restaurant-container id="restaurant-container"></restaurant-container>
 
-        <algolia-search id="main" class="main">
-            <p>This is not very interesting</p>
-        </algolia-search>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@3.4.2/dist/algoliasearch.helper.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@3.4.2/dist/algoliasearch.helper.min.js"></script>
-<!--        <script src="components/search-box.js"></script>-->
-<!--        <script type="module" src="app.js"></script>-->
+    <!--        <script src="components/search-box.js"></script>-->
     <script src="dist/application.js"></script>
     </body>
 </html>

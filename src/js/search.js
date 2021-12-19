@@ -1,62 +1,54 @@
-import { restaurantCardsContainer } from '../components/restaurant-card'
+import { restaurantsContainer } from '../components/restaurant-card'
 
 const applicationID = '7PKCLB5WKZ';
 const apiKey = '253e1b38b67534943884ddee5c7bc2d7';
 const index = 'fe_restaurants';
-//
-// class Hello {
-//     constructor(config) {
-//         this.target = config.target;
-//         console.log('here')
+
+// export class Test {
+//     constructor() {
+//         this.test = 'test'
 //     }
 //
-//     run() {
-//         console.log('here')
-//         this.target.innerHTML = `
-//       <p>
-//         Hello from ES2015
-//       </p>
-//     `;
+//     getTest = () => {
+//         return this.test
 //     }
 // }
 //
-// export default Hello
+// export default Test
 
-export class SearchContainer {
+export class AlgoliaSearch {
     constructor() {
         // super();
         console.log('here')
-        this.searchBar = '';
-        this.container = '';
+        // this.searchBar = '';
+        // this.container = '';
         const client = algoliasearch(applicationID, apiKey);
         this.helper = algoliasearchHelper(client, index);
 
-        // this.container = new restaurantCardsContainer()
     }
 
-    connectedCallback() {
-        this.searchBar = this.querySelector("#search-box-input");
-        this.container = this.querySelector("#main");
+    executeSearch = () => {
 
-        this.renderResults()
-    }
-
-    onSearch(){
-        this.searchBar.addEventListener('keyup', () => {
-            this.helper.setQuery(this.searchBar.value).search();
-        });
-    }
-
-    renderResults() {
+        // console.log(this.helper)
         this.helper.search();
-        console.log('here')
 
-        this.helper.on('result', function(content) {
-            console.log(content);
-        });
+        // this.helper.on('result', function(content) {
+        //     console.log('now empty', content);
+        // });
+        console.log('i executed')
     }
+
+    getHelper = () => {
+        return this.helper
+    }
+
+    // onSearch(){
+    //     this.searchBar.addEventListener('keyup', () => {
+    //         this.helper.setQuery(this.searchBar.value).search();
+    //     });
+    // }
+
 }
 
-export default SearchContainer
+export default AlgoliaSearch
 
-// export const Search = () => customElements.define('algolia-search', SearchContainer);

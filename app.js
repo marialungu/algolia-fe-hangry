@@ -1,13 +1,8 @@
-// import { test, Search } from "./src/js/search.js"
-import { restaurantCardsContainer } from "./src/components/restaurant-card.js"
-
-/**
- * Main application element, simply registers the web components
-//  */
-import SearchContainer from './src/js/search.js'
+import {registerRestaurantContainer} from './src/components/restaurant-card.js'
 import './main.scss'
+import AlgoliaSearch from "./src/js/search";
 
-(new SearchContainer({
-})).renderResults()
+// new AlgoliaSearch().executeSearch();
+registerRestaurantContainer().render()
 
 alert('connected')
