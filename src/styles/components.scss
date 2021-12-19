@@ -1,13 +1,19 @@
 @import "colors";
 
 @mixin primary-button {
-  border-radius: 18px;
   color: $ink;
   background-color: $primary;
   border: none;
 }
 
 @mixin button-large {
+  border-radius: 18px;
   height: 54px;
   width: 140px;
+}
+
+@mixin button-medium {
+  border-radius: 15px;
+  height: 48px;
+  width: 100px;
 }

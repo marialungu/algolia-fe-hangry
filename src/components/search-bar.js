@@ -26,6 +26,16 @@ export class SearchBar extends HTMLElement{
     }
 
     render() {
+        const nextButton = document.getElementById('next')
+        nextButton.addEventListener('click', () => {
+            this.helper.nextPage().search()
+        })
+
+        const prevButton = document.getElementById('previous')
+        prevButton.addEventListener('click', () => {
+            this.helper.previousPage().search()
+        })
+
         this.helper.on('result', function (content) {
             content.results.hits.length > 0 ?
             renderRestaurantCards(content) :

@@ -7,6 +7,7 @@ export class AlgoliaSearch {
         const client = algoliasearch(applicationID, apiKey);
         this.helper = algoliasearchHelper(client, index, {
             aroundLatLngViaIP: true,
+            page: 0,
             facets: ['food_type', 'rounded_stars_count', 'payment_options']
         });
     }
