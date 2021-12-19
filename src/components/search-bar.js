@@ -1,6 +1,7 @@
 import AlgoliaSearch from "../js/search";
 import {searchBar} from "./templates";
 import {renderRestaurantCards} from "./render-restaurant-cards";
+import {renderNoResults} from "./render-no-results";
 
 export class SearchBar extends HTMLElement{
     constructor() {
@@ -26,7 +27,9 @@ export class SearchBar extends HTMLElement{
 
     render() {
         this.helper.on('result', function (content) {
-            renderRestaurantCards(content)
+            content.results.hits.length > 0 ?
+            renderRestaurantCards(content) :
+                renderNoResults()
         });
         this.appendChild(searchBar.content.cloneNode(true));
     }

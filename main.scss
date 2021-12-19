@@ -108,3 +108,17 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.no-results {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-results-text{
+  @include h1-styled-thin;
+  color: $primary;
+  margin-top: 3em;
+}
