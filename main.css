@@ -193,6 +193,23 @@ body {
   border: 1px solid #818a95;
   color: #182e47;
   margin-right: 20px;
+  width: 12em; }
+  .payment-filter-container.selected {
+    background-color: #fffcf0;
+    border: none;
+    color: #f8d16c; }
+
+.payment-filter-container {
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #818a95;
+  color: #182e47;
+  margin-right: 20px;
   width: 15em; }
   .payment-filter-container.selected {
     background-color: #fffcf0;
@@ -237,7 +254,7 @@ body {
 
 .rating-filter {
   display: none;
-  height: 200px;
+  height: auto;
   width: 160px;
   top: 194px;
   left: 391px;
@@ -247,6 +264,24 @@ body {
   background-color: white;
   position: absolute; }
   .rating-filter.open {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+
+.payment-filter {
+  display: none;
+  height: auto;
+  width: 242px;
+  top: 194px;
+  left: 609px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute; }
+  .payment-filter.open {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -304,6 +339,7 @@ body {
   align-items: center;
   width: 70px;
   height: 50px;
+  margin-bottom: 10px;
   border-radius: 15px;
   border: 1px solid #f7f9fa;
   color: #182e47; }
@@ -316,13 +352,43 @@ body {
     background-color: #fffcf0;
     border: none; }
 
+.payment-filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid #f7f9fa;
+  color: #182e47; }
+  .payment-filter-item.selected {
+    color: #f8d16c;
+    background-color: #fffcf0;
+    border: none; }
+  .payment-filter-item:hover {
+    color: #f8d16c;
+    background-color: #fffcf0;
+    border: none; }
+
 .rating-filter-name {
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
 
+.payment-filter-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
+
 .rating-filter-star {
   font-size: 12px;
   margin-right: 5px; }
+
+.payment-filter-icon {
+  font-size: 14px;
+  margin-right: 10px; }
 
