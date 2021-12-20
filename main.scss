@@ -138,6 +138,26 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+
+  &.no-display {
+    display: none;
+  }
+}
+
+.previous-btn {
+  opacity: 1;
+
+  &.no-display {
+    opacity: 0.4;
+  }
+}
+
+.previous-btn {
+  opacity: 1;
+
+  &.no-display {
+    opacity: 0.4;
+  }
 }
 
 .food-type-filter-container {

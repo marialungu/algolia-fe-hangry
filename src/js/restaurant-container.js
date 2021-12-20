@@ -4,11 +4,9 @@ import {renderResultMeta} from "../components/render-results-meta";
 import {renderFoodFacets} from "../components/render-food-facets";
 import {renderPaymentFacets} from "../components/render-payment-facets";
 import {renderNoResults} from "../components/render-no-results";
-import {renderPagination} from "../components/render-pagination";
 
 export class RestaurantContainer {
     constructor(helper) {
-        console.log('in constructor', helper)
         this.helper = helper
     }
 
@@ -22,7 +20,6 @@ export class RestaurantContainer {
         prevButton.addEventListener('click', () => {
             this.helper.previousPage().search()
         })
-        console.log('in render', this.helper)
 
         const ratingFacets = document.querySelector('#rating-filter')
         ratingFacets.addEventListener('click', (e) => {
@@ -55,7 +52,6 @@ export class RestaurantContainer {
         });
 
         this.helper.on('result', function (content) {
-            console.log(content)
             const paginationContainer = document.querySelector('#pagination')
             const resultsMeta = document.querySelector('#result-meta')
 
@@ -71,20 +67,19 @@ export class RestaurantContainer {
 
             const paymentFilter = document.querySelector('#payment-facet')
             const paymentFilterFacetValues = content.results.getFacetValues('payment_options');
-            const paymentRefinedFacets = foodTypeFilterFacetValues.find(facet => facet.isRefined)
+            const paymentRefinedFacets = paymentFilterFacetValues.find(facet => facet.isRefined)
             paymentRefinedFacets ? paymentFilter.classList.add('selected') : paymentFilter.classList.remove('selected')
 
             if  (content.results.hits.length > 0) {
-                console.log('here in results')
                 renderResultMeta(content)
                 renderRestaurantCards(content)
                 renderRatingFacets(ratingFacetValues)
                 renderFoodFacets(foodTypeFilterFacetValues)
                 renderPaymentFacets(paymentFilterFacetValues)
-                renderPagination()
+                paginationContainer.classList.remove('no-display')
             } else {
                 resultsMeta.innerHTML = ''
-                paginationContainer.innerHTML = ''
+                paginationContainer.classList.add('no-display')
                 renderNoResults()
             }
         });

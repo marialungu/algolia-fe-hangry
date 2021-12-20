@@ -24,7 +24,6 @@ const handleGeolocation = (coordinates) => {
 }
 
 const handleSuccess = (pos) =>  {
-    console.log(pos)
     const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
     handleGeolocation(coordinates)
 }

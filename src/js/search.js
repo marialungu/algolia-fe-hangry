@@ -16,7 +16,6 @@ const getOptions = (coordinates) => {
 export class SearchService {
     constructor(props) {
         const options = getOptions(props.coordinates)
-        console.log(options)
         const client = algoliasearch(applicationID, apiKey);
         this.helper = algoliasearchHelper(client, index, options);
     }
