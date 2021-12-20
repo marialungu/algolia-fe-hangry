@@ -3,6 +3,8 @@ import {renderRatingFacets} from "../components/render-rating-facets";
 import {renderResultMeta} from "../components/render-results-meta";
 import {renderFoodFacets} from "../components/render-food-facets";
 import {renderPaymentFacets} from "../components/render-payment-facets";
+import {renderNoResults} from "../components/render-no-results";
+import {renderPagination} from "../components/render-pagination";
 
 export class RestaurantContainer {
     constructor(helper) {
@@ -54,6 +56,9 @@ export class RestaurantContainer {
 
         this.helper.on('result', function (content) {
             console.log(content)
+            const paginationContainer = document.querySelector('#pagination')
+            const resultsMeta = document.querySelector('#result-meta')
+
             const ratingFilter = document.querySelector('#rating-facet')
             const ratingFacetValues = content.results.getFacetValues('rounded_stars_count');
             const findRatingRefinedFacets = ratingFacetValues.find(facet => facet.isRefined)
@@ -69,11 +74,19 @@ export class RestaurantContainer {
             const paymentRefinedFacets = foodTypeFilterFacetValues.find(facet => facet.isRefined)
             paymentRefinedFacets ? paymentFilter.classList.add('selected') : paymentFilter.classList.remove('selected')
 
-            renderResultMeta(content)
-            renderRestaurantCards(content)
-            renderRatingFacets(ratingFacetValues)
-            renderFoodFacets(foodTypeFilterFacetValues)
-            renderPaymentFacets(paymentFilterFacetValues)
+            if  (content.results.hits.length > 0) {
+                console.log('here in results')
+                renderResultMeta(content)
+                renderRestaurantCards(content)
+                renderRatingFacets(ratingFacetValues)
+                renderFoodFacets(foodTypeFilterFacetValues)
+                renderPaymentFacets(paymentFilterFacetValues)
+                renderPagination()
+            } else {
+                resultsMeta.innerHTML = ''
+                paginationContainer.innerHTML = ''
+                renderNoResults()
+            }
         });
     }
 }

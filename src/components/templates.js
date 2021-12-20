@@ -70,6 +70,16 @@ resultMetaTemplate.innerHTML = `
     <div class="result-time"></div>
 `
 
+export const paginationTemplate = document.createElement('template')
+paginationTemplate.innerHTML = `
+    <button class="medium-btn pagination-btn" id="previous">
+        Previous
+    </button>
+    <button class="medium-btn" id="next">
+        Next
+    </button>
+`
+
 export const clearButtonTemplate = document.createElement('template')
 clearButtonTemplate.innerHTML = `
     <div class="clear-button">Clear all filters</div>
