@@ -7,29 +7,31 @@ import {registerRatingFilter} from "./src/components/rating-filter";
 import {registerPaymentFilter} from "./src/components/payment-filter";
 //
 
-let searchService = null;
+let searchService = null
 
-const success = (pos) =>  {
-    const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
+const handleGeolocation = (coordinates) => {
     searchService = new SearchService({coordinates: coordinates})
     const helper = searchService.getHelper();
-    helper.search();
-    new RestaurantContainer(helper).render()
-}
+    globalThis.helper = helper;
 
-function error() {
-    searchService = new SearchService({coordinates: null})
-    const helper = searchService.getHelper();
-    helper.search();
+    helper.search()
 
     new RestaurantContainer(helper).render()
     registerSearchBar()
 }
 
-navigator.geolocation.getCurrentPosition(success, error);
+const handleSuccess = (pos) =>  {
+    console.log(pos)
+    const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
+    handleGeolocation(coordinates)
+}
 
+function handleError() {
+    const coord = null
+    handleGeolocation(coord)
+}
 
-// const searchService = new SearchService();
+navigator.geolocation.getCurrentPosition(handleSuccess, handleError);
 
 // restaurant.render()
 // registerSearchBar()
