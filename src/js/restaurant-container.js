@@ -10,7 +10,7 @@ export class RestaurantContainer {
     }
 
     render() {
-        this.search;
+        // this.search;
 
         const nextButton = document.getElementById('next')
         nextButton.addEventListener('click', () => {
@@ -21,9 +21,11 @@ export class RestaurantContainer {
         prevButton.addEventListener('click', () => {
             this.helper.previousPage().search()
         })
+        console.log(this.helper)
 
 
         this.helper.on('result', function (content) {
+            console.log('here', content)
             renderRestaurantCards(content)
         });
     }

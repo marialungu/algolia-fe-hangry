@@ -48,6 +48,14 @@ foodFacetTemplate.innerHTML = `
     </div>
 `;
 
+export const ratingFacetTemplate = document.createElement('template')
+ratingFacetTemplate.innerHTML = `
+    <div class="rating-filter-score" id="rating-item-facet">
+        <i class="fas fa-star rating-filter-star"></i>
+        <div id="rating-facet-name" class="rating-filter-name"></div>
+    </div>
+`;
+
 export const resultMetaTemplate = document.createElement('template')
 resultMetaTemplate.innerHTML = `
     <div class="result-count"></div>
@@ -61,10 +69,21 @@ clearButtonTemplate.innerHTML = `
 
 export const foodFilter = document.createElement('template')
 foodFilter.innerHTML = `
-    <div class="filter-container" id="food-type">
+    <div class="food-type-filter-container" id="food-type">
         <div class="filter-name">
             <i class="fas fa-utensils filter-icon"></i>
             <div class="filter-text">Cuisine/Food Type</div>
+        </div>
+        <i class="fas fa-caret-down filter-arrow"></i>
+    </div>
+`
+
+export const ratingFilter = document.createElement('template')
+ratingFilter.innerHTML = `
+    <div class="rating-filter-container" id="rating-facet">
+        <div class="filter-name">
+            <i class="fas fa-star filter-icon"></i>
+            <div class="filter-text">Rating</div>
         </div>
         <i class="fas fa-caret-down filter-arrow"></i>
     </div>

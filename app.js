@@ -3,23 +3,24 @@ import {registerSearchBar} from "./src/components/search-bar";
 import RestaurantContainer from "./src/js/restaurant-container";
 import AlgoliaSearch from "./src/js/search";
 import {registerFoodTypeFilter} from "./src/components/food-type-filter";
+import {registerRatingFilter} from "./src/components/rating-filter";
 //
 // const success = (pos) =>  {
-//     new AlgoliaSearch(pos.coords)
+//     const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
+//     new AlgoliaSearch(coordinates)
 //     new RestaurantContainer().render()
-//     registerSearchBar()
+//     console.log('i rendered')
 // }
 //
 // function error() {
-//     new AlgoliaSearch()
-//     new RestaurantContainer().render()
-//     registerSearchBar()
+//
 // }
 //
 // navigator.geolocation
 //     .getCurrentPosition(success, error);
 
-new AlgoliaSearch()
+// new AlgoliaSearch()
 new RestaurantContainer().render()
 registerSearchBar()
 registerFoodTypeFilter()
+registerRatingFilter()

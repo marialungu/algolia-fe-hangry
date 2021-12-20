@@ -17,3 +17,22 @@
   height: 48px;
   width: 100px;
 }
+
+@mixin filter {
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid $inkSecondary;
+  color: $ink;
+  margin-right: 20px;
+
+  &.selected {
+    background-color: $primaryDisabled;
+    border: none;
+    color: $primary;
+  }
+}

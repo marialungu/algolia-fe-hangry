@@ -1,11 +1,11 @@
 import AlgoliaSearch from "../js/search";
-import {foodFilter} from "./templates";
+import { ratingFilter} from "./templates";
 import {renderRestaurantCards} from "./render-restaurant-cards";
 import {renderResultMeta} from "./render-results-meta";
 import {renderFoodFacets} from "./render-food-facets";
 import {renderRatingFacets} from "./render-rating-facets";
 
-export class FoodTypeFilter extends HTMLElement{
+export class RatingFilter extends HTMLElement{
     constructor() {
         super();
 
@@ -14,7 +14,7 @@ export class FoodTypeFilter extends HTMLElement{
         this.helper = null
         this.search = null;
 
-        this.facets = document.getElementById('food-filter')
+        this.facets = document.getElementById('rating-filter')
 
         this.addEventListener('click', () => {
             this.facets.classList.add('open')
@@ -30,7 +30,6 @@ export class FoodTypeFilter extends HTMLElement{
     }
 
     render() {
-
         this.facets.addEventListener('click', (e) => {
             e.preventDefault()
             const target = e.target;
@@ -41,20 +40,21 @@ export class FoodTypeFilter extends HTMLElement{
         });
 
         this.helper.on('result', function (content) {
-            const filter = document.querySelector('#food-type')
-            const facetValues = content.results.getFacetValues('food_type');
+            const filter = document.querySelector('#rating-facet')
+            const facetValues = content.results.getFacetValues('rounded_stars_count');
+            console.log(facetValues)
             const findFacets = facetValues.find(facet => facet.isRefined)
 
             findFacets ? filter.classList.add('selected') : filter.classList.remove('selected')
 
             renderRestaurantCards(content)
             renderResultMeta(content)
-            renderFoodFacets(facetValues)
+            renderRatingFacets(facetValues)
         });
 
-        this.appendChild(foodFilter.content.cloneNode(true));
+        this.appendChild(ratingFilter.content.cloneNode(true));
     }
 
 }
 
-export const registerFoodTypeFilter = () => customElements.define('food-type-filter', FoodTypeFilter);
+export const registerRatingFilter = () => customElements.define('rating-filter', RatingFilter);

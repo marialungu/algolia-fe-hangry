@@ -4,13 +4,20 @@ const index = 'fe_restaurants';
 
 export class AlgoliaSearch {
     constructor(coordinates) {
-        console.log('here', coordinates)
+        console.log(coordinates)
         const client = algoliasearch(applicationID, apiKey);
         this.helper = algoliasearchHelper(client, index, {
-            // aroundLatLng: String(coordinates.latitude + "," + coordinates.longitude),
+            // aroundLatLng: coordinates,
             page: 0,
             disjunctiveFacets: ['food_type', 'rounded_stars_count', 'payment_options']
         });
+    }
+
+    addOptions = (coordinates) => {
+        console.log(coordinates)
+        this.helper.setQueryParameter('aroundLatLng', coordinates);
+        console.log(this.helper)
+        this.helper.search()
     }
 
     executeSearch = () => {

@@ -1,7 +1,7 @@
 import {foodFacetTemplate} from "./templates";
 
 export const renderFoodFacets = (facetValues) => {
-    const facets = document.querySelector('#facets');
+    const facets = document.querySelector('#food-filter');
     facets.innerHTML = ''
 
     const allElements = (elements) => {
@@ -11,7 +11,7 @@ export const renderFoodFacets = (facetValues) => {
                 const name = restaurantClone.querySelector('#food-facet-name');
                 const count = restaurantClone.querySelector('#food-facet-count');
                 const container = restaurantClone.querySelector('#food-facet');
-                container.dataset.attribute = 'food-type'
+                container.dataset.attribute = 'food_type'
                 container.dataset.value = facet.name
                 name.dataset.attribute = 'food_type'
                 name.dataset.value = facet.name
