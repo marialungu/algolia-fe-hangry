@@ -9,7 +9,7 @@ export class AlgoliaSearch {
         this.helper = algoliasearchHelper(client, index, {
             // aroundLatLng: String(coordinates.latitude + "," + coordinates.longitude),
             page: 0,
-            facets: ['food_type', 'rounded_stars_count', 'payment_options']
+            disjunctiveFacets: ['food_type', 'rounded_stars_count', 'payment_options']
         });
     }
 

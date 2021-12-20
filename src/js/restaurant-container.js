@@ -1,6 +1,5 @@
 import AlgoliaSearch from "./search";
 import {renderRestaurantCards} from "../components/render-restaurant-cards";
-import {renderFoodFacets} from "../components/render-food-filter";
 
 export class RestaurantContainer {
     constructor() {
@@ -13,12 +12,6 @@ export class RestaurantContainer {
     render() {
         this.search;
 
-        const foodFilter = document.getElementById('food-type')
-        const facets = document.getElementById('facets')
-        foodFilter.addEventListener('click', () => {
-            facets.classList.add('open')
-        })
-
         const nextButton = document.getElementById('next')
         nextButton.addEventListener('click', () => {
             this.helper.nextPage().search()
@@ -29,9 +22,9 @@ export class RestaurantContainer {
             this.helper.previousPage().search()
         })
 
+
         this.helper.on('result', function (content) {
             renderRestaurantCards(content)
-            renderFoodFacets(content)
         });
     }
 

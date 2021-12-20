@@ -42,8 +42,30 @@ starOutline.innerHTML = `<i class="far fa-star star"></i>`
 
 export const foodFacetTemplate = document.createElement('template')
 foodFacetTemplate.innerHTML = `
-    <div class="food-facet">
+    <div id="food-facet">
         <div class="food-facet-text food-facet-name" id="food-facet-name"></div>
         <div class="food-facet-text" id="food-facet-count"></div>
     </div>
 `;
+
+export const resultMetaTemplate = document.createElement('template')
+resultMetaTemplate.innerHTML = `
+    <div class="result-count"></div>
+    <div class="result-time"></div>
+`
+
+export const clearButtonTemplate = document.createElement('template')
+clearButtonTemplate.innerHTML = `
+    <div class="clear-button">Clear filter</div>
+`
+
+export const foodFilter = document.createElement('template')
+foodFilter.innerHTML = `
+    <div class="filter-container" id="food-type">
+        <div class="filter-name">
+            <i class="fas fa-utensils filter-icon"></i>
+            <div class="filter-text">Cuisine/Food Type</div>
+        </div>
+        <i class="fas fa-caret-down filter-arrow"></i>
+    </div>
+`

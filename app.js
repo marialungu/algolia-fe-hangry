@@ -2,6 +2,7 @@ import './main.scss'
 import {registerSearchBar} from "./src/components/search-bar";
 import RestaurantContainer from "./src/js/restaurant-container";
 import AlgoliaSearch from "./src/js/search";
+import {registerFoodTypeFilter} from "./src/components/food-type-filter";
 //
 // const success = (pos) =>  {
 //     new AlgoliaSearch(pos.coords)
@@ -21,3 +22,4 @@ import AlgoliaSearch from "./src/js/search";
 new AlgoliaSearch()
 new RestaurantContainer().render()
 registerSearchBar()
+registerFoodTypeFilter()
