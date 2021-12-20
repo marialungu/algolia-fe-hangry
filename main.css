@@ -126,7 +126,7 @@ body {
   flex-wrap: wrap; }
 
 .no-results {
-  height: 80vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +147,18 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end; }
+  .pagination.no-display {
+    display: none; }
+
+.previous-btn {
+  opacity: 1; }
+  .previous-btn.no-display {
+    opacity: 0.4; }
+
+.previous-btn {
+  opacity: 1; }
+  .previous-btn.no-display {
+    opacity: 0.4; }
 
 .food-type-filter-container {
   height: 3em;
