@@ -1,4 +1,4 @@
-import AlgoliaSearch from "../js/search";
+import SearchService from "../js/search";
 import { ratingFilter} from "./templates";
 import {renderRestaurantCards} from "./render-restaurant-cards";
 import {renderResultMeta} from "./render-results-meta";
@@ -9,7 +9,7 @@ export class RatingFilter extends HTMLElement{
     constructor() {
         super();
 
-        this.algoliaSearch = new AlgoliaSearch();
+        this.algoliaSearch = new SearchService();
 
         this.helper = null
         this.search = null;

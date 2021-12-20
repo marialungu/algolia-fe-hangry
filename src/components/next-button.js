@@ -1,4 +1,4 @@
-import AlgoliaSearch from "../js/search";
+import SearchService from "../js/search";
 import {nextButton} from "./templates";
 import {renderRestaurantCards} from "./render-restaurant-cards";
 import {renderNoResults} from "./render-no-results";
@@ -7,7 +7,7 @@ export class NextButton extends HTMLElement{
     constructor() {
         super();
 
-        this.algoliaSearch = new AlgoliaSearch();
+        this.algoliaSearch = new SearchService();
 
         this.helper = null
         this.search = null;

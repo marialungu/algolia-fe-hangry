@@ -1,27 +1,29 @@
-import AlgoliaSearch from "./search";
+import SearchService from "./search";
 import {renderRestaurantCards} from "../components/render-restaurant-cards";
 
 export class RestaurantContainer {
-    constructor() {
-        this.algoliaSearch = new AlgoliaSearch();
+    constructor(helper) {
+        // this.algoliaSearch = new SearchService();
 
-        this.helper = this.algoliaSearch.getHelper()
-        this.search = this.algoliaSearch.executeSearch();
+        console.log('in constructor', helper)
+        this.helper = helper
+        // this.search = this.algoliaSearch.executeSearch();
     }
 
     render() {
         // this.search;
-
-        const nextButton = document.getElementById('next')
-        nextButton.addEventListener('click', () => {
-            this.helper.nextPage().search()
-        })
-
-        const prevButton = document.getElementById('previous')
-        prevButton.addEventListener('click', () => {
-            this.helper.previousPage().search()
-        })
-        console.log(this.helper)
+        //
+        // const nextButton = document.getElementById('next')
+        // nextButton.addEventListener('click', () => {
+        //     this.helper.nextPage().search()
+        // })
+        //
+        // const prevButton = document.getElementById('previous')
+        // prevButton.addEventListener('click', () => {
+        //     this.helper.previousPage().search()
+        // })
+        console.log('in render', this.helper)
+        // this.helper.search()
 
 
         this.helper.on('result', function (content) {

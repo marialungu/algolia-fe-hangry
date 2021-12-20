@@ -1,28 +1,38 @@
 import './main.scss'
 import {registerSearchBar} from "./src/components/search-bar";
 import RestaurantContainer from "./src/js/restaurant-container";
-import AlgoliaSearch from "./src/js/search";
+import SearchService from "./src/js/search";
 import {registerFoodTypeFilter} from "./src/components/food-type-filter";
 import {registerRatingFilter} from "./src/components/rating-filter";
 import {registerPaymentFilter} from "./src/components/payment-filter";
 //
-// const success = (pos) =>  {
-//     const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
-//     new AlgoliaSearch(coordinates)
-//     new RestaurantContainer().render()
-//     console.log('i rendered')
-// }
-//
-// function error() {
-//
-// }
-//
-// navigator.geolocation
-//     .getCurrentPosition(success, error);
 
-// new AlgoliaSearch()
-new RestaurantContainer().render()
-registerSearchBar()
-registerFoodTypeFilter()
-registerRatingFilter()
-registerPaymentFilter()
+let searchService = null;
+
+const success = (pos) =>  {
+    const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
+    searchService = new SearchService({coordinates: coordinates})
+    const helper = searchService.getHelper();
+    helper.search();
+    new RestaurantContainer(helper).render()
+}
+
+function error() {
+    searchService = new SearchService({coordinates: null})
+    const helper = searchService.getHelper();
+    helper.search();
+
+    new RestaurantContainer(helper).render()
+    registerSearchBar()
+}
+
+navigator.geolocation.getCurrentPosition(success, error);
+
+
+// const searchService = new SearchService();
+
+// restaurant.render()
+// registerSearchBar()
+// registerFoodTypeFilter()
+// registerRatingFilter()
+// registerPaymentFilter()
