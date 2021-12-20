@@ -148,8 +148,7 @@ body {
   width: 100%;
   justify-content: flex-end; }
 
-.filter-container {
-  width: 15em;
+.food-type-filter-container {
   height: 3em;
   padding: 0 1em;
   display: flex;
@@ -158,8 +157,44 @@ body {
   align-items: center;
   border-radius: 16px;
   border: 1px solid #818a95;
-  color: #182e47; }
-  .filter-container.selected {
+  color: #182e47;
+  margin-right: 20px;
+  width: 15em; }
+  .food-type-filter-container.selected {
+    background-color: #fffcf0;
+    border: none;
+    color: #f8d16c; }
+
+.rating-filter-container {
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #818a95;
+  color: #182e47;
+  margin-right: 20px;
+  width: 10em; }
+  .rating-filter-container.selected {
+    background-color: #fffcf0;
+    border: none;
+    color: #f8d16c; }
+
+.payment-filter-container {
+  height: 3em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #818a95;
+  color: #182e47;
+  margin-right: 20px;
+  width: 15em; }
+  .payment-filter-container.selected {
     background-color: #fffcf0;
     border: none;
     color: #f8d16c; }
@@ -180,21 +215,42 @@ body {
   align-items: center; }
 
 .filters-container {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 30px; }
 
-.facets {
+.food-filter {
   display: none;
   height: 670px;
+  top: 194px;
   width: 850px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
   background-color: white;
   position: absolute; }
-  .facets.open {
+  .food-filter.open {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center; }
+
+.rating-filter {
+  display: none;
+  height: 200px;
+  width: 160px;
+  top: 194px;
+  left: 391px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute; }
+  .rating-filter.open {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center; }
 
 .food-facet {
@@ -240,4 +296,33 @@ body {
   line-height: 24px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+
+.rating-filter-score {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #f7f9fa;
+  color: #182e47; }
+  .rating-filter-score.selected {
+    color: #f8d16c;
+    background-color: #fffcf0;
+    border: none; }
+  .rating-filter-score:hover {
+    color: #f8d16c;
+    background-color: #fffcf0;
+    border: none; }
+
+.rating-filter-name {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
+
+.rating-filter-star {
+  font-size: 12px;
+  margin-right: 5px; }
 

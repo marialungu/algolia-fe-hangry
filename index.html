@@ -31,13 +31,20 @@
 
     <section class="filters-container">
         <food-type-filter></food-type-filter>
+        <rating-filter></rating-filter>
+        <div class="payment-filter-container" id="payment">
+            <div class="filter-name">
+                <i class="fas fa-money-bill filter-icon"></i>
+                <div class="filter-text">Payment method</div>
+            </div>
+            <i class="fas fa-caret-down filter-arrow"></i>
+        </div>
     </section>
 
-    <div id="facets" class="facets"></div>
+    <div id="food-filter" class="food-filter"></div>
+    <div id="rating-filter" class="rating-filter"></div>
 
-    <section class="result-meta" id="result-meta">
-    </section>
-
+    <section class="result-meta" id="result-meta"></section>
     <section id="container"></section>
 
     <section class="pagination">
