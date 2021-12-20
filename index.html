@@ -32,17 +32,30 @@
     <section class="filters-container">
         <food-type-filter></food-type-filter>
         <rating-filter></rating-filter>
-        <div class="payment-filter-container" id="payment">
-            <div class="filter-name">
-                <i class="fas fa-money-bill filter-icon"></i>
-                <div class="filter-text">Payment method</div>
-            </div>
-            <i class="fas fa-caret-down filter-arrow"></i>
-        </div>
+        <payment-filter></payment-filter>
     </section>
 
     <div id="food-filter" class="food-filter"></div>
     <div id="rating-filter" class="rating-filter"></div>
+    <div id="payment-filter" class="payment-filter">
+        <div class="payment-filter-item" id="payment-item-facet">
+            <i class="far fa-credit-card payment-filter-icon"></i>
+            <div id="payment-facet-name" class="payment-filter-name">AMEX/American Express</div>
+        </div>
+
+        <div class="payment-filter-item" id="payment-item-facet">
+            <i class="far fa-credit-card payment-filter-icon"></i>
+            <div id="payment-facet-name" class="payment-filter-name">Visa</div>
+        </div>
+        <div class="payment-filter-item" id="payment-item-facet">
+            <i class="far fa-credit-card payment-filter-icon"></i>
+            <div id="payment-facet-name" class="payment-filter-name">MasterCard</div>
+        </div>
+        <div class="payment-filter-item" id="payment-item-facet">
+            <i class="far fa-credit-card payment-filter-icon"></i>
+            <div id="payment-facet-name" class="payment-filter-name">Discover</div>
+        </div>
+    </div>
 
     <section class="result-meta" id="result-meta"></section>
     <section id="container"></section>

@@ -4,6 +4,7 @@ import RestaurantContainer from "./src/js/restaurant-container";
 import AlgoliaSearch from "./src/js/search";
 import {registerFoodTypeFilter} from "./src/components/food-type-filter";
 import {registerRatingFilter} from "./src/components/rating-filter";
+import {registerPaymentFilter} from "./src/components/payment-filter";
 //
 // const success = (pos) =>  {
 //     const coordinates = `${pos.coords.latitude}, ${pos.coords.longitude}`
@@ -24,3 +25,4 @@ new RestaurantContainer().render()
 registerSearchBar()
 registerFoodTypeFilter()
 registerRatingFilter()
+registerPaymentFilter()

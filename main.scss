@@ -152,6 +152,11 @@ body {
 
 .payment-filter-container {
   @include filter;
+  width: 12em;
+}
+
+.payment-filter-container {
+  @include filter;
   width: 15em;
 }
 
@@ -201,6 +206,27 @@ body {
   width: 160px;
   top: 194px;
   left: 391px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+
+  &.open {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.payment-filter {
+  display: none;
+  height: 250px;
+  width: 242px;
+  top: 194px;
+  left: 609px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
@@ -284,11 +310,46 @@ body {
   }
 }
 
+.payment-filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid $fieldBackground;
+  color: $ink;
+
+  &.selected {
+    color: $primary;
+    background-color: $primaryDisabled;
+    border: none;
+  }
+
+  &:hover {
+    color: $primary;
+    background-color: $primaryDisabled;
+    border: none;
+  }
+}
+
 .rating-filter-name {
   @include h3-styled
 }
+
+.payment-filter-name {
+  @include p-styled
+}
+
 .rating-filter-star {
   font-size: 12px;
   margin-right: 5px;
 }
+
+.payment-filter-icon {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
 

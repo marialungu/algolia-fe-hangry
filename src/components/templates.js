@@ -56,6 +56,14 @@ ratingFacetTemplate.innerHTML = `
     </div>
 `;
 
+export const paymentFacetTemplate = document.createElement('template')
+paymentFacetTemplate.innerHTML = `
+    <div class="payment-filter-item" id="payment-item-facet">
+        <i class="far fa-credit-card payment-filter-icon"></i>
+        <div id="payment-facet-name" class="payment-filter-name"></div>
+    </div>
+`;
+
 export const resultMetaTemplate = document.createElement('template')
 resultMetaTemplate.innerHTML = `
     <div class="result-count"></div>
@@ -64,7 +72,7 @@ resultMetaTemplate.innerHTML = `
 
 export const clearButtonTemplate = document.createElement('template')
 clearButtonTemplate.innerHTML = `
-    <div class="clear-button">Clear filter</div>
+    <div class="clear-button">Clear all filters</div>
 `
 
 export const foodFilter = document.createElement('template')
@@ -84,6 +92,16 @@ ratingFilter.innerHTML = `
         <div class="filter-name">
             <i class="fas fa-star filter-icon"></i>
             <div class="filter-text">Rating</div>
+        </div>
+        <i class="fas fa-caret-down filter-arrow"></i>
+    </div>
+`
+export const paymentFilter = document.createElement('template')
+paymentFilter.innerHTML = `
+    <div class="payment-filter-container" id="payment-facet">
+        <div class="filter-name">
+            <i class="fas fa-money-bill filter-icon"></i>
+            <div class="filter-text">Payment method</div>
         </div>
         <i class="fas fa-caret-down filter-arrow"></i>
     </div>
