@@ -1,4 +1,4 @@
-import {foodFacetTemplate, ratingFacetTemplate} from "./templates";
+import {ratingFacetTemplate} from "./templates";
 
 export const renderRatingFacets = (facetValues) => {
     const facets = document.querySelector('#rating-filter');

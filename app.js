@@ -20,6 +20,7 @@ const handleGeolocation = (coordinates) => {
     registerSearchBar()
     registerRatingFilter()
     registerFoodTypeFilter()
+    registerPaymentFilter()
 }
 
 const handleSuccess = (pos) =>  {
@@ -34,7 +35,3 @@ function handleError() {
 }
 
 navigator.geolocation.getCurrentPosition(handleSuccess, handleError);
-
-// restaurant.render()
-// registerSearchBar()
-// registerPaymentFilter()

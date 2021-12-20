@@ -2,6 +2,7 @@ import {renderRestaurantCards} from "../components/render-restaurant-cards";
 import {renderRatingFacets} from "../components/render-rating-facets";
 import {renderResultMeta} from "../components/render-results-meta";
 import {renderFoodFacets} from "../components/render-food-facets";
+import {renderPaymentFacets} from "../components/render-payment-facets";
 
 export class RestaurantContainer {
     constructor(helper) {
@@ -41,7 +42,18 @@ export class RestaurantContainer {
             foodFacets.classList.remove('open')
         });
 
+        const paymentFacets = document.querySelector('#payment-filter')
+        paymentFacets.addEventListener('click', (e) => {
+            e.preventDefault()
+            const target = e.target;
+            const attribute = target.dataset.attribute;
+            const value = target.dataset.value;
+            this.helper.toggleRefine(attribute,value).search();
+            paymentFacets.classList.remove('open')
+        });
+
         this.helper.on('result', function (content) {
+            console.log(content)
             const ratingFilter = document.querySelector('#rating-facet')
             const ratingFacetValues = content.results.getFacetValues('rounded_stars_count');
             const findRatingRefinedFacets = ratingFacetValues.find(facet => facet.isRefined)
@@ -52,10 +64,16 @@ export class RestaurantContainer {
             const findFoodTypeRefinedFacets = foodTypeFilterFacetValues.find(facet => facet.isRefined)
             findFoodTypeRefinedFacets ? foodTypeFilter.classList.add('selected') : foodTypeFilter.classList.remove('selected')
 
+            const paymentFilter = document.querySelector('#payment-facet')
+            const paymentFilterFacetValues = content.results.getFacetValues('payment_options');
+            const paymentRefinedFacets = foodTypeFilterFacetValues.find(facet => facet.isRefined)
+            paymentRefinedFacets ? paymentFilter.classList.add('selected') : paymentFilter.classList.remove('selected')
+
             renderResultMeta(content)
             renderRestaurantCards(content)
             renderRatingFacets(ratingFacetValues)
             renderFoodFacets(foodTypeFilterFacetValues)
+            renderPaymentFacets(paymentFilterFacetValues)
         });
     }
 }
