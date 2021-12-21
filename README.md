@@ -2,11 +2,11 @@
 
 VanillaJS app developed for Algolia FrontEnd Engineer Assignment
 
-##Live version (powered by `gh-pages`)
+## Live version (powered by `gh-pages`)
 
 https://marialungu.github.io/algolia-fe-hangry/
 
-##Starting the app locally
+## Starting the app locally
 
 ### Prerequisites 
 
