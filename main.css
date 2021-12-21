@@ -780,7 +780,6 @@ body {
   @media screen and (max-width: 800px) and (min-width: 400px) {
     .clear-all-button {
       height: 36px;
-      margin-top: 10px;
       margin-right: 10px; } }
 
 .clear-button-text {
