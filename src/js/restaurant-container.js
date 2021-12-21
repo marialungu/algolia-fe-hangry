@@ -61,8 +61,6 @@ export class RestaurantContainer {
                 clearAll.classList.add('is-disabled')
         });
 
-        console.log(this.helper.getPage())
-
         this.helper.on('result', function (content) {
             const paginationContainer = document.querySelector('#pagination')
             const resultsMeta = document.querySelector('#result-meta')

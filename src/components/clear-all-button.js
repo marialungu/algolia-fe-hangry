@@ -18,7 +18,6 @@ export class ClearAllButton extends HTMLElement{
     }
 
     render() {
-        console.log()
         this.appendChild(clearButtonTemplate.content.cloneNode(true));
     }
 
