@@ -352,9 +352,10 @@ body {
 
 .food-filter {
   display: none;
-  height: 582px;
-  top: 194px;
-  width: 1010px;
+  height: 560px;
+  top: 192px;
+  width: 640px;
+  overflow: scroll;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
@@ -370,7 +371,6 @@ body {
     .food-filter {
       height: 500px;
       top: 162px;
-      overflow: scroll;
       width: 560px;
       padding: 15px; } }
 
@@ -378,7 +378,7 @@ body {
   display: none;
   height: auto;
   width: 160px;
-  top: 194px;
+  top: 192px;
   left: 391px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -402,7 +402,7 @@ body {
   display: none;
   height: auto;
   width: 242px;
-  top: 194px;
+  top: 192px;
   left: 605px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
