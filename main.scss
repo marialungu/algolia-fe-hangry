@@ -310,12 +310,38 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    text-align: center;
+  }
+
+  @media screen and (max-width: $phone){
+    height: 44vh;
+  }
 }
 
 .no-results-text{
   @include h1-styled-thin;
   color: $primary;
-  margin-top: 3em;
+  margin-top: 30px;
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    text-align: center;
+  }
+
+  @media screen and (max-width: $phone){
+    text-align: center;
+  }
+}
+
+.no-results-img {
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 62%;
+  }
+
+  @media screen and (max-width: $phone){
+    width: 80%;
+  }
 }
 
 .pagination-btn {

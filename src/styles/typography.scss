@@ -35,6 +35,16 @@
   line-height: 40px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media screen and (max-width: $phone){
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 @mixin h2-styled {
