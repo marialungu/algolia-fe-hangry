@@ -9,7 +9,6 @@ export class SearchBar extends HTMLElement{
         this.addEventListener('keyup', () => {
             this.helper.setQuery(this.getElementsByTagName('input')[0].value).search();
         });
-
     }
 
     connectedCallback(){

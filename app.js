@@ -21,6 +21,36 @@ const handleGeolocation = (coordinates) => {
     registerRatingFilter()
     registerFoodTypeFilter()
     registerPaymentFilter()
+
+    document.addEventListener('click', function(event) {
+        const foodFilter = document.querySelector('#food-type')
+        const foodFacets = document.querySelector('#food-filter')
+        const isClickInside = foodFilter.contains(event.target);
+
+        if (!isClickInside) {
+            foodFacets.classList.remove('open')
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const ratingFilter = document.querySelector('#rating-facet')
+        const ratingFacets = document.querySelector('#rating-filter')
+        const isClickInside = ratingFilter.contains(event.target);
+
+        if (!isClickInside) {
+            ratingFacets.classList.remove('open')
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const paymentFilter = document.querySelector('#payment-facet')
+        const paymentFacets = document.querySelector('#payment-filter')
+        const isClickInside = paymentFilter.contains(event.target);
+
+        if (!isClickInside) {
+            paymentFacets.classList.remove('open')
+        }
+    });
 }
 
 const handleSuccess = (pos) =>  {

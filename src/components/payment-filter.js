@@ -7,7 +7,9 @@ export class PaymentFilter extends HTMLElement{
         this.facets = document.getElementById('payment-filter')
 
         this.addEventListener('click', () => {
-            this.facets.classList.add('open')
+            this.facets.classList.contains('open') ?
+                this.facets.classList.remove('open') :
+                this.facets.classList.add('open')
         })
     }
 

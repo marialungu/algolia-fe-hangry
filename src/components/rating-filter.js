@@ -6,7 +6,9 @@ export class RatingFilter extends HTMLElement{
 
         this.facets = document.querySelector('#rating-filter')
         this.addEventListener('click', () => {
-            this.facets.classList.add('open')
+            this.facets.classList.contains('open') ?
+                this.facets.classList.remove('open') :
+                this.facets.classList.add('open')
         })
     }
 
