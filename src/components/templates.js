@@ -82,7 +82,7 @@ paginationTemplate.innerHTML = `
 
 export const clearButtonTemplate = document.createElement('template')
 clearButtonTemplate.innerHTML = `
-    <div class="clear-button">Clear all filters</div>
+    <div class="clear-button-text">Clear all filters</div>
 `
 
 export const foodFilter = document.createElement('template')

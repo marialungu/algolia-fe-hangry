@@ -29,6 +29,7 @@
   border: 1px solid $inkSecondary;
   color: $ink;
   margin-right: 20px;
+  cursor: pointer;
 
   &.selected {
     background-color: $primaryDisabled;

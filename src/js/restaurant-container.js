@@ -11,6 +11,7 @@ export class RestaurantContainer {
     }
 
     render() {
+        const clearAll = document.querySelector('.clear-all-button')
         const nextButton = document.getElementById('next')
         nextButton.addEventListener('click', () => {
             this.helper.nextPage().search()
@@ -28,7 +29,10 @@ export class RestaurantContainer {
             const attribute = target.dataset.attribute;
             const value = target.dataset.value;
             this.helper.toggleRefine(attribute,value).search();
-            ratingFacets.classList.remove('open')
+            ratingFacets.classList.remove('open');
+            this.helper.hasRefinements('rounded_stars_count') ?
+                clearAll.classList.remove('is-disabled') :
+                clearAll.classList.add('is-disabled')
         });
 
         const foodFacets = document.querySelector('#food-filter')
@@ -39,6 +43,9 @@ export class RestaurantContainer {
             const value = target.dataset.value;
             this.helper.toggleRefine(attribute,value).search();
             foodFacets.classList.remove('open')
+            this.helper.hasRefinements('food_type') ?
+                clearAll.classList.remove('is-disabled') :
+                clearAll.classList.add('is-disabled')
         });
 
         const paymentFacets = document.querySelector('#payment-filter')
@@ -48,7 +55,10 @@ export class RestaurantContainer {
             const attribute = target.dataset.attribute;
             const value = target.dataset.value;
             this.helper.toggleRefine(attribute,value).search();
-            paymentFacets.classList.remove('open')
+            paymentFacets.classList.remove('open');
+            this.helper.hasRefinements('payment_options') ?
+                clearAll.classList.remove('is-disabled') :
+                clearAll.classList.add('is-disabled')
         });
 
         this.helper.on('result', function (content) {

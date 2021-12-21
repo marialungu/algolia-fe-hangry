@@ -5,7 +5,7 @@ import SearchService from "./src/js/search";
 import {registerFoodTypeFilter} from "./src/components/food-type-filter";
 import {registerRatingFilter} from "./src/components/rating-filter";
 import {registerPaymentFilter} from "./src/components/payment-filter";
-//
+import {registerClearAll} from "./src/components/clear-all-button";
 
 let searchService = null
 
@@ -21,6 +21,7 @@ const handleGeolocation = (coordinates) => {
     registerRatingFilter()
     registerFoodTypeFilter()
     registerPaymentFilter()
+    registerClearAll()
 
     document.addEventListener('click', function(event) {
         const foodFilter = document.querySelector('#food-type')

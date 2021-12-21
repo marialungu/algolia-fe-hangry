@@ -203,9 +203,9 @@ body {
 
 .food-filter {
   display: none;
-  height: 670px;
+  height: 582px;
   top: 194px;
-  width: 850px;
+  width: 1010px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
@@ -270,16 +270,22 @@ body {
   padding: 5px 15px;
   align-items: center;
   color: $ink;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 1px solid $fieldBackground;
+  border-radius: 10px;
 
   &:hover{
     background-color: $primaryDisabled;
     border-radius: 15px;
+    border: none;
     color: $primary
   }
 
   &.selected {
     background-color: $primaryDisabled;
     border-radius: 15px;
+    border: none;
     color: $primary
   }
 }
@@ -317,6 +323,7 @@ body {
   border-radius: 15px;
   border: 1px solid $fieldBackground;
   color: $ink;
+  cursor: pointer;
 
   &.selected {
     color: $primary;
@@ -342,6 +349,7 @@ body {
   border-radius: 15px;
   border: 1px solid $fieldBackground;
   color: $ink;
+  cursor: pointer;
 
   &.selected {
     color: $primary;
@@ -372,6 +380,23 @@ body {
 .payment-filter-icon {
   font-size: 14px;
   margin-right: 10px;
+}
+
+.clear-all-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $inkSecondaryContrast;
+
+  &.is-disabled {
+    color: $inkSecondary;
+    pointer-events: none
+  }
+}
+
+.clear-button-text {
+  @include p-styled;
 }
 
 
