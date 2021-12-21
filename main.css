@@ -6,10 +6,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     body {
       margin: 30px 50px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     body {
       margin: 25px 30px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     body {
       margin: 20px 25px; } }
 
@@ -22,10 +22,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .navigation {
       margin-bottom: 40px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .navigation {
       margin-bottom: 30px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .navigation {
       margin-bottom: 30px; } }
 
@@ -38,11 +38,11 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .logo-text {
       font-size: 30px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .logo-text {
       font-size: 26px;
       line-height: 44px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .logo-text {
       font-size: 26px;
       line-height: 44px; } }
@@ -50,21 +50,21 @@ body {
 .logo {
   display: flex;
   flex-direction: row; }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .logo {
       order: 1;
       width: 180px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .logo {
       order: 1;
       width: 180px; } }
 
 .search-box {
   display: flex; }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .search-box {
       order: 2; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .search-box {
       order: 2; } }
 
@@ -75,11 +75,11 @@ body {
     .logo-img {
       font-size: 26px;
       margin-top: 6px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .logo-img {
       font-size: 24px;
       margin-top: 5px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .logo-img {
       font-size: 24px;
       margin-top: 5px; } }
@@ -100,12 +100,12 @@ body {
       border-radius: 15px;
       height: 46px;
       width: 110px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .large-btn {
       border-radius: 13px;
       height: 40px;
       width: 100px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .large-btn {
       border-radius: 13px;
       height: 40px;
@@ -114,21 +114,21 @@ body {
     .large-btn {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .large-btn {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .large-btn {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .large-btn {
       display: flex;
       order: 1;
       align-items: center;
       justify-content: center; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .large-btn {
       display: flex;
       order: 1;
@@ -138,15 +138,15 @@ body {
       line-height: 24px;
       font-weight: 600;
       font-family: 'Raleway', sans-serif; } }
-  @media screen and (max-width: 400px) and (max-width: 1164px) and (min-width: 800px) {
+  @media screen and (max-width: 435px) and (max-width: 1164px) and (min-width: 800px) {
     .large-btn {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 435px) and (max-width: 800px) and (min-width: 435px) {
     .large-btn {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) and (max-width: 400px) {
+  @media screen and (max-width: 435px) and (max-width: 435px) {
     .large-btn {
       font-size: 12px;
       line-height: 24px; } }
@@ -168,12 +168,12 @@ body {
       border-radius: 15px;
       height: 42px;
       width: 94px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .medium-btn {
       border-radius: 13px;
       height: 38px;
       width: 86px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .medium-btn {
       border-radius: 14px;
       height: 44px;
@@ -182,11 +182,11 @@ body {
     .medium-btn {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .medium-btn {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .medium-btn {
       font-size: 12px;
       line-height: 24px; } }
@@ -200,11 +200,11 @@ body {
     .search-icon {
       font-size: 16px;
       padding: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .search-icon {
       font-size: 15px;
       padding: 32px 15px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .search-icon {
       font-size: 13px;
       padding: 34px 15px; } }
@@ -225,11 +225,11 @@ body {
     .search-box-container {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .search-box-container {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .search-box-container {
       font-size: 14px;
       line-height: 24px; } }
@@ -240,14 +240,14 @@ body {
       height: 46px;
       border-radius: 15px;
       padding: 0 20px 0 40px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .search-box-container {
       height: 40px;
       border-radius: 13px;
       width: 80vw;
       margin-top: 20px;
       padding: 0 16px 0 38px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .search-box-container {
       height: 40px;
       border-radius: 13px;
@@ -258,15 +258,15 @@ body {
       line-height: 24px;
       font-weight: 600;
       font-family: 'Raleway', sans-serif; } }
-  @media screen and (max-width: 400px) and (max-width: 1164px) and (min-width: 800px) {
+  @media screen and (max-width: 435px) and (max-width: 1164px) and (min-width: 800px) {
     .search-box-container {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 435px) and (max-width: 800px) and (min-width: 435px) {
     .search-box-container {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) and (max-width: 400px) {
+  @media screen and (max-width: 435px) and (max-width: 435px) {
     .search-box-container {
       font-size: 12px;
       line-height: 24px; } }
@@ -288,11 +288,11 @@ body {
     .restaurant-name {
       font-size: 16px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .restaurant-name {
       font-size: 16px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .restaurant-name {
       font-size: 16px;
       line-height: 24px; } }
@@ -300,11 +300,11 @@ body {
     .restaurant-name {
       width: 95%;
       margin-bottom: 5px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .restaurant-name {
       width: 95%;
       margin-bottom: 5px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .restaurant-name {
       width: 95%;
       margin-bottom: 5px; } }
@@ -320,11 +320,11 @@ body {
     .restaurant-subheader {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .restaurant-subheader {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .restaurant-subheader {
       font-size: 12px;
       line-height: 24px; } }
@@ -335,11 +335,11 @@ body {
     .restaurant-image {
       width: 100%;
       margin-bottom: 5px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .restaurant-image {
       width: 100%;
       margin-bottom: 5px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .restaurant-image {
       width: 100%;
       margin-bottom: 5px; } }
@@ -352,11 +352,11 @@ body {
       width: 30%;
       margin-bottom: 35px;
       margin-right: 10px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .restaurant-card {
       width: 47%;
       margin-bottom: 30px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .restaurant-card {
       width: 100%;
       margin-bottom: 30px; } }
@@ -379,21 +379,21 @@ body {
     .rating-score {
       font-size: 16px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-score {
       font-size: 16px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-score {
       font-size: 16px;
       line-height: 24px; } }
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .rating-score {
       margin-right: 5px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-score {
       margin-right: 5px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-score {
       margin-right: 5px; } }
 
@@ -403,10 +403,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .star {
       font-size: 12px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .star {
       font-size: 12px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .star {
       font-size: 12px; } }
 
@@ -416,7 +416,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .search-result {
       flex-direction: column; } }
 
@@ -426,6 +426,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 800px) and (min-width: 435px) {
+    .no-results {
+      text-align: center; } }
+  @media screen and (max-width: 435px) {
+    .no-results {
+      height: 44vh; } }
 
 .no-results-text {
   font-size: 24px;
@@ -433,17 +439,39 @@ body {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   color: #f8d16c;
-  margin-top: 3em; }
+  margin-top: 30px; }
+  @media screen and (max-width: 800px) and (min-width: 435px) {
+    .no-results-text {
+      font-size: 20px;
+      line-height: 28px; } }
+  @media screen and (max-width: 435px) {
+    .no-results-text {
+      font-size: 16px;
+      line-height: 28px; } }
+  @media screen and (max-width: 800px) and (min-width: 435px) {
+    .no-results-text {
+      text-align: center; } }
+  @media screen and (max-width: 435px) {
+    .no-results-text {
+      text-align: center; } }
+
+@media screen and (max-width: 800px) and (min-width: 435px) {
+  .no-results-img {
+    width: 62%; } }
+
+@media screen and (max-width: 435px) {
+  .no-results-img {
+    width: 80%; } }
 
 .pagination-btn {
   margin-right: 25px; }
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .pagination-btn {
       margin-right: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .pagination-btn {
       margin-right: 15px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .pagination-btn {
       margin-right: 0; } }
 
@@ -453,7 +481,7 @@ body {
   justify-content: flex-end; }
   .pagination.no-display {
     display: none; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .pagination {
       justify-content: space-between; } }
 
@@ -490,13 +518,13 @@ body {
       border-radius: 14px;
       padding: 0 15px;
       margin-right: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .food-type-filter-container {
       height: 36px;
       border-radius: 13px;
       padding: 0 12px;
       margin-right: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .food-type-filter-container {
       height: 38px;
       border-radius: 13px;
@@ -505,10 +533,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .food-type-filter-container {
       width: 180px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .food-type-filter-container {
       width: 154px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .food-type-filter-container {
       width: 93%; } }
 
@@ -535,13 +563,13 @@ body {
       border-radius: 14px;
       padding: 0 15px;
       margin-right: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter-container {
       height: 36px;
       border-radius: 13px;
       padding: 0 12px;
       margin-right: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter-container {
       height: 38px;
       border-radius: 13px;
@@ -550,10 +578,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .rating-filter-container {
       width: 125px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter-container {
       width: 100px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter-container {
       width: 93%; } }
 
@@ -580,13 +608,13 @@ body {
       border-radius: 14px;
       padding: 0 15px;
       margin-right: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .payment-filter-container {
       height: 36px;
       border-radius: 13px;
       padding: 0 12px;
       margin-right: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .payment-filter-container {
       height: 38px;
       border-radius: 13px;
@@ -595,10 +623,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .payment-filter-container {
       width: 160px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .payment-filter-container {
       width: 145px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .payment-filter-container {
       width: 93%; } }
 
@@ -612,15 +640,15 @@ body {
     .filter-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .filter-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .filter-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .filter-text {
       margin-left: 10px; } }
 
@@ -629,10 +657,10 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .filter-icon {
       font-size: 12px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .filter-icon {
       font-size: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .filter-icon {
       font-size: 12px; } }
 
@@ -649,11 +677,11 @@ body {
   @media screen and (max-width: 1164px) and (min-width: 800px) {
     .filters-container {
       margin-bottom: 30px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .filters-container {
       margin-bottom: 10px;
       justify-content: flex-end; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .filters-container {
       margin-bottom: 20px;
       justify-content: flex-end;
@@ -682,13 +710,13 @@ body {
       top: 162px;
       width: 560px;
       padding: 15px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .food-filter {
       height: 400px;
       top: 197px;
       width: 350px;
       padding: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .food-filter {
       height: 400px;
       top: 194px;
@@ -719,13 +747,13 @@ body {
       left: 272px;
       padding: 15px;
       width: 130px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter {
       top: 197px;
       left: 219px;
       padding: 10px;
       width: 120px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter {
       top: 244px;
       left: 24px;
@@ -755,13 +783,13 @@ body {
       left: 448px;
       padding: 15px;
       width: 165px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .payment-filter {
       top: 197px;
       left: 356px;
       padding: 10px;
       width: 150px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .payment-filter {
       top: 294px;
       left: 24px;
@@ -793,13 +821,13 @@ body {
       width: 150px;
       padding: 6px 12px;
       margin-bottom: 8px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .food-facet {
       width: 140px;
       padding: 6px 12px;
       margin-bottom: 6px;
       border-radius: 11px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .food-facet {
       width: 92%;
       padding: 8px 20px;
@@ -815,11 +843,11 @@ body {
     .food-facet-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .food-facet-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .food-facet-text {
       font-size: 12px;
       line-height: 24px; } }
@@ -842,11 +870,11 @@ body {
     .result-time {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .result-time {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .result-time {
       font-size: 12px;
       line-height: 24px; } }
@@ -860,11 +888,11 @@ body {
     .result-count {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .result-count {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .result-count {
       font-size: 12px;
       line-height: 24px; } }
@@ -895,13 +923,13 @@ body {
       height: 44px;
       margin-bottom: 8px;
       border-radius: 12px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter-score {
       width: 54px;
       height: 40px;
       margin-bottom: 6px;
       border-radius: 12px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter-score {
       width: 54px;
       height: 40px;
@@ -933,13 +961,13 @@ body {
       width: 162px;
       height: 44px;
       margin-bottom: 8px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .payment-filter-item {
       width: 148px;
       height: 40px;
       margin-bottom: 6px;
       border-radius: 13px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .payment-filter-item {
       width: 100%;
       height: 44px;
@@ -955,11 +983,11 @@ body {
     .rating-filter-name {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter-name {
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter-name {
       font-size: 14px;
       line-height: 24px; } }
@@ -973,11 +1001,11 @@ body {
     .payment-filter-name {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .payment-filter-name {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .payment-filter-name {
       font-size: 12px;
       line-height: 24px; } }
@@ -989,11 +1017,11 @@ body {
     .rating-filter-star {
       font-size: 10px;
       margin-right: 4px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .rating-filter-star {
       font-size: 10px;
       margin-right: 4px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .rating-filter-star {
       font-size: 10px;
       margin-right: 4px; } }
@@ -1011,11 +1039,11 @@ body {
   .clear-all-button.is-disabled {
     color: #818a95;
     pointer-events: none; }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .clear-all-button {
       height: 36px;
       margin-right: 10px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .clear-all-button {
       height: 36px;
       margin-right: 10px; } }
@@ -1029,11 +1057,11 @@ body {
     .clear-button-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 800px) and (min-width: 400px) {
+  @media screen and (max-width: 800px) and (min-width: 435px) {
     .clear-button-text {
       font-size: 12px;
       line-height: 24px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 435px) {
     .clear-button-text {
       font-size: 12px;
       line-height: 24px; } }
