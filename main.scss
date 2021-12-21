@@ -9,16 +9,24 @@ body {
     margin: 30px 50px;
   }
 
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    margin: 25px 30px;
+  }
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    margin-bottom: 30px;
   }
 }
 
@@ -29,8 +37,19 @@ body {
 .logo {
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    order: 1;
+    width: 180px;
+  }
 }
 
+.search-box {
+  display: flex;
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    order: 2;
+  }
+}
 .logo-img {
   color: $primary;
   font-size: 34px;
@@ -39,12 +58,24 @@ body {
     font-size: 26px;
     margin-top: 6px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 24px;
+    margin-top: 5px;
+  }
 }
 
 .large-btn {
   @include primary-button;
   @include button-large;
   @include h3-styled;
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    display: flex;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .medium-btn {
@@ -63,6 +94,11 @@ body {
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     font-size: 16px;
     padding: 15px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 15px;
+    padding: 32px 15px;
   }
 
 }
@@ -87,6 +123,14 @@ body {
     padding: 0 20px 0 40px;
   }
 
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    height: 40px;
+    border-radius: 13px;
+    width: 80vw;
+    margin-top: 20px;
+    padding: 0 16px 0 38px;
+  }
+
 }
 
 .restaurant-name {
@@ -101,6 +145,11 @@ body {
   margin-bottom: 10px;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 95%;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
     width: 95%;
     margin-bottom: 5px;
   }
@@ -119,6 +168,11 @@ body {
     width: 100%;
     margin-bottom: 5px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 
 .restaurant-card {
@@ -129,6 +183,11 @@ body {
     width: 30%;
     margin-bottom: 35px;
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 47%;
+    margin-bottom: 30px;
   }
 }
 
@@ -147,6 +206,10 @@ body {
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     margin-right: 5px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    margin-right: 5px;
+  }
 }
 
 .star {
@@ -154,6 +217,10 @@ body {
   color: $primary;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
     font-size: 12px;
   }
 }
@@ -164,10 +231,6 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  //
-  //@media screen and (max-width: $minidesktop) and (min-width: $tablet){
-  //  justify-content: space-around;
-  //}
 }
 
 .no-results {
@@ -188,6 +251,10 @@ body {
   margin-right: 25px;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
     margin-right: 15px;
   }
 }
@@ -225,6 +292,10 @@ body {
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     width: 180px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 154px;
+  }
 }
 
 .rating-filter-container {
@@ -233,6 +304,10 @@ body {
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     width: 125px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 100px;
   }
 }
 
@@ -243,11 +318,15 @@ body {
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     width: 160px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 145px;
+  }
 }
 
 .filter-text {
   @include p-styled;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .filter-icon {
@@ -255,6 +334,10 @@ body {
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     font-size: 12px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 10px;
   }
 }
 
@@ -267,10 +350,16 @@ body {
 .filters-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    margin-bottom: 10px;
+    justify-content: flex-end;
   }
 }
 
@@ -300,6 +389,13 @@ body {
     width: 560px;
     padding: 15px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    height: 400px;
+    top: 197px;
+    width: 350px;
+    padding: 10px;
+  }
 }
 
 .rating-filter {
@@ -328,6 +424,13 @@ body {
     padding: 15px;
     width: 130px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    top: 197px;
+    left: 219px;
+    adding: 10px;
+    width: 120px;
+  }
 }
 
 .payment-filter {
@@ -355,6 +458,13 @@ body {
     left: 448px;
     padding: 15px;
     width: 165px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    top: 197px;
+    left: 356px;
+    padding: 10px;
+    width: 150px;
   }
 }
 
@@ -387,6 +497,13 @@ body {
     width: 150px;
     padding: 6px 12px;
     margin-bottom: 8px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 140px;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    border-radius: 11px;
   }
 }
 
@@ -443,6 +560,13 @@ body {
     margin-bottom: 8px;
     border-radius: 12px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 54px;
+    height: 40px;
+    margin-bottom: 6px;
+    border-radius: 12px;
+  }
 }
 
 .payment-filter-item {
@@ -475,6 +599,13 @@ body {
     height: 44px;
     margin-bottom: 8px;
   }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    width: 148px;
+    height: 40px;
+    margin-bottom: 6px;
+    border-radius: 13px;
+  }
 }
 
 .rating-filter-name {
@@ -490,6 +621,11 @@ body {
   margin-right: 5px;
 
   @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 10px;
+    margin-right: 4px;
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
     font-size: 10px;
     margin-right: 4px;
   }
@@ -511,6 +647,12 @@ body {
   &.is-disabled {
     color: $inkSecondary;
     pointer-events: none
+  }
+
+  @media screen and (max-width: $tablet) and (min-width: $phone){
+    height: 36px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 }
 
