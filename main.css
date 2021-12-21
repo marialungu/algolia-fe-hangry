@@ -3,12 +3,18 @@
   \****************************************************************************************************/
 body {
   margin: 40px 100px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    body {
+      margin: 30px 50px; } }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 50px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .navigation {
+      margin-bottom: 40px; } }
 
 .logo-text {
   font-size: 38px;
@@ -16,6 +22,9 @@ body {
   font-weight: 800;
   font-family: 'Montserrat', sans-serif;
   color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .logo-text {
+      font-size: 30px; } }
 
 .logo {
   display: flex;
@@ -24,6 +33,10 @@ body {
 .logo-img {
   color: #f8d16c;
   font-size: 34px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .logo-img {
+      font-size: 26px;
+      margin-top: 6px; } }
 
 .large-btn {
   color: #182e47;
@@ -36,6 +49,15 @@ body {
   line-height: 26px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .large-btn {
+      border-radius: 15px;
+      height: 46px;
+      width: 110px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .large-btn {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .medium-btn {
   color: #182e47;
@@ -47,13 +69,27 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: #182e47; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .medium-btn {
+      border-radius: 15px;
+      height: 42px;
+      width: 94px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .medium-btn {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .search-icon {
   color: #f8d16c;
   font-size: 20px;
   padding: 17px;
   position: absolute; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .search-icon {
+      font-size: 16px;
+      padding: 15px; } }
 
 .search-box-container {
   font-size: 16px;
@@ -62,13 +98,22 @@ body {
   font-family: 'Raleway', sans-serif;
   height: 54px;
   padding: 0 25px 0 45px;
-  width: 46em;
+  width: 46vw;
   border: none;
   border-radius: 18px;
   background-color: #f7f9fa;
   color: #42576e; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .search-box-container {
+      font-size: 14px;
+      line-height: 24px; } }
   .search-box-container:focus-visible {
     outline: none; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .search-box-container {
+      height: 46px;
+      border-radius: 15px;
+      padding: 0 20px 0 40px; } }
 
 .restaurant-name {
   font-size: 18px;
@@ -83,6 +128,14 @@ body {
   color: #182e47;
   margin-left: 10px;
   margin-bottom: 10px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .restaurant-name {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .restaurant-name {
+      width: 95%;
+      margin-bottom: 5px; } }
 
 .restaurant-subheader {
   font-size: 14px;
@@ -91,13 +144,26 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #818a95;
   margin-left: 10px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .restaurant-subheader {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .restaurant-image {
   border-radius: 20px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .restaurant-image {
+      width: 100%;
+      margin-bottom: 5px; } }
 
 .restaurant-card {
   width: 300px;
   margin-bottom: 50px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .restaurant-card {
+      width: 30%;
+      margin-bottom: 35px;
+      margin-right: 10px; } }
 
 .rating {
   display: flex;
@@ -113,10 +179,20 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #f8d16c;
   margin-right: 10px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-score {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-score {
+      margin-right: 5px; } }
 
 .star {
   font-size: 14px;
   color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .star {
+      font-size: 12px; } }
 
 .search-result {
   margin-bottom: 20px;
@@ -141,7 +217,10 @@ body {
   margin-top: 3em; }
 
 .pagination-btn {
-  margin-right: 2em; }
+  margin-right: 25px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .pagination-btn {
+      margin-right: 15px; } }
 
 .pagination {
   display: flex;
@@ -161,8 +240,8 @@ body {
     opacity: 0.4; }
 
 .food-type-filter-container {
-  height: 3em;
-  padding: 0 1em;
+  height: 46px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -172,15 +251,24 @@ body {
   color: #182e47;
   margin-right: 20px;
   cursor: pointer;
-  width: 15em; }
+  width: 230px; }
   .food-type-filter-container.selected {
     background-color: #fffcf0;
     border: none;
     color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .food-type-filter-container {
+      height: 40px;
+      border-radius: 14px;
+      padding: 0 15px;
+      margin-right: 15px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .food-type-filter-container {
+      width: 180px; } }
 
 .rating-filter-container {
-  height: 3em;
-  padding: 0 1em;
+  height: 46px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -190,15 +278,24 @@ body {
   color: #182e47;
   margin-right: 20px;
   cursor: pointer;
-  width: 10em; }
+  width: 150px; }
   .rating-filter-container.selected {
     background-color: #fffcf0;
     border: none;
     color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter-container {
+      height: 40px;
+      border-radius: 14px;
+      padding: 0 15px;
+      margin-right: 15px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter-container {
+      width: 125px; } }
 
 .payment-filter-container {
-  height: 3em;
-  padding: 0 1em;
+  height: 46px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -208,29 +305,20 @@ body {
   color: #182e47;
   margin-right: 20px;
   cursor: pointer;
-  width: 12em; }
+  width: 210px; }
   .payment-filter-container.selected {
     background-color: #fffcf0;
     border: none;
     color: #f8d16c; }
-
-.payment-filter-container {
-  height: 3em;
-  padding: 0 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 16px;
-  border: 1px solid #818a95;
-  color: #182e47;
-  margin-right: 20px;
-  cursor: pointer;
-  width: 15em; }
-  .payment-filter-container.selected {
-    background-color: #fffcf0;
-    border: none;
-    color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .payment-filter-container {
+      height: 40px;
+      border-radius: 14px;
+      padding: 0 15px;
+      margin-right: 15px; } }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .payment-filter-container {
+      width: 160px; } }
 
 .filter-text {
   font-size: 14px;
@@ -238,9 +326,16 @@ body {
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
   margin-left: 10px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .filter-text {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .filter-icon {
   font-size: 14px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .filter-icon {
+      font-size: 12px; } }
 
 .filter-name {
   display: flex;
@@ -250,7 +345,10 @@ body {
 .filters-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px; }
+  margin-bottom: 40px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .filters-container {
+      margin-bottom: 30px; } }
 
 .food-filter {
   display: none;
@@ -264,9 +362,17 @@ body {
   position: absolute; }
   .food-filter.open {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .food-filter {
+      height: 500px;
+      top: 162px;
+      overflow: scroll;
+      width: 560px;
+      padding: 15px; } }
 
 .rating-filter {
   display: none;
@@ -285,6 +391,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter {
+      top: 162px;
+      left: 272px;
+      padding: 15px;
+      width: 130px; } }
 
 .payment-filter {
   display: none;
@@ -303,6 +415,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .payment-filter {
+      top: 162px;
+      left: 448px;
+      padding: 15px;
+      width: 165px; } }
 
 .food-facet {
   display: flex;
@@ -315,23 +433,30 @@ body {
   cursor: pointer;
   margin-bottom: 5px;
   border: 1px solid #f7f9fa;
-  border-radius: 10px; }
+  border-radius: 15px; }
   .food-facet:hover {
     background-color: #fffcf0;
-    border-radius: 15px;
     border: none;
     color: #f8d16c; }
   .food-facet.selected {
     background-color: #fffcf0;
-    border-radius: 15px;
     border: none;
     color: #f8d16c; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .food-facet {
+      width: 150px;
+      padding: 6px 12px;
+      margin-bottom: 8px; } }
 
 .food-facet-text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .food-facet-text {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .food-facet-name {
   width: 130px; }
@@ -347,12 +472,20 @@ body {
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   margin-left: 5px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .result-time {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .result-count {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .result-count {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .rating-filter-score {
   display: flex;
@@ -374,6 +507,12 @@ body {
     color: #f8d16c;
     background-color: #fffcf0;
     border: none; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter-score {
+      width: 60px;
+      height: 44px;
+      margin-bottom: 8px;
+      border-radius: 12px; } }
 
 .payment-filter-item {
   display: flex;
@@ -395,22 +534,39 @@ body {
     color: #f8d16c;
     background-color: #fffcf0;
     border: none; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .payment-filter-item {
+      width: 162px;
+      height: 44px;
+      margin-bottom: 8px; } }
 
 .rating-filter-name {
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter-name {
+      font-size: 14px;
+      line-height: 24px; } }
 
 .payment-filter-name {
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .payment-filter-name {
+      font-size: 12px;
+      line-height: 24px; } }
 
 .rating-filter-star {
   font-size: 12px;
   margin-right: 5px; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .rating-filter-star {
+      font-size: 10px;
+      margin-right: 4px; } }
 
 .payment-filter-icon {
   font-size: 14px;
@@ -431,4 +587,8 @@ body {
   line-height: 24px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif; }
+  @media screen and (max-width: 1164px) and (min-width: 800px) {
+    .clear-button-text {
+      font-size: 12px;
+      line-height: 24px; } }
 
