@@ -16,6 +16,11 @@
     font-size: 26px;
     line-height: 44px;
   }
+
+  @media screen and (max-width: $phone){
+    font-size: 26px;
+    line-height: 44px;
+  }
 }
 
 @mixin h1-styled {
@@ -47,6 +52,11 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media screen and (max-width: $phone){
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @mixin h3-styled {
@@ -61,6 +71,11 @@
   }
 
   @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: $phone){
     font-size: 14px;
     line-height: 24px;
   }
@@ -82,6 +97,11 @@
     font-size: 12px;
     line-height: 24px;
   }
+
+  @media screen and (max-width: $phone){
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 
 @mixin p-styled-thin {
@@ -96,6 +116,11 @@
   }
 
   @media screen and (max-width: $tablet) and (min-width: $phone){
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: $phone){
     font-size: 12px;
     line-height: 24px;
   }

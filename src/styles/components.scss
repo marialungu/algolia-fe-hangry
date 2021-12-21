@@ -23,6 +23,12 @@
     width: 100px;
   }
 
+  @media screen and (max-width: $phone){
+    border-radius: 13px;
+    height: 40px;
+    width: 100px;
+  }
+
 }
 
 @mixin button-medium {
@@ -40,6 +46,12 @@
     border-radius: 13px;
     height: 38px;
     width: 86px;
+  }
+
+  @media screen and (max-width: $phone){
+    border-radius: 14px;
+    height: 44px;
+    width: 110px;
   }
 }
 
@@ -74,5 +86,12 @@
     border-radius: 13px;
     padding: 0 12px;
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: $phone){
+    height: 38px;
+    border-radius: 13px;
+    padding: 0 12px;
+    margin-bottom: 10px;
   }
 }
