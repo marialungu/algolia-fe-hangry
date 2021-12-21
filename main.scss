@@ -2,9 +2,13 @@
 @import "src/styles/typography";
 @import "src/styles/components";
 
-
 body {
   margin: 40px 100px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin: 30px 50px;
+  }
+
 }
 
 .navigation {
@@ -12,6 +16,10 @@ body {
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 50px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin-bottom: 40px;
+  }
 }
 
 .logo-text {
@@ -26,6 +34,11 @@ body {
 .logo-img {
   color: $primary;
   font-size: 34px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 26px;
+    margin-top: 6px;
+  }
 }
 
 .large-btn {
@@ -38,6 +51,7 @@ body {
   @include primary-button;
   @include button-medium;
   @include p-styled;
+  color: $ink;
 }
 
 .search-icon {
@@ -45,13 +59,19 @@ body {
   font-size: 20px;
   padding: 17px;
   position: absolute;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 16px;
+    padding: 15px;
+  }
+
 }
 
 .search-box-container {
   @include h3-styled;
   height: 54px;
   padding: 0 25px 0 45px;
-  width: 46em;
+  width: 46vw;
   border: none;
   border-radius: 18px;
   background-color: $fieldBackground;
@@ -60,6 +80,13 @@ body {
   &:focus-visible {
     outline: none;
   }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    height: 46px;
+    border-radius: 15px;
+    padding: 0 20px 0 40px;
+  }
+
 }
 
 .restaurant-name {
@@ -73,6 +100,10 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
 
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 95%;
+    margin-bottom: 5px;
+  }
 }
 
 .restaurant-subheader {
@@ -83,11 +114,22 @@ body {
 
 .restaurant-image {
   border-radius: 20px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 
 .restaurant-card {
   width: 300px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 30%;
+    margin-bottom: 35px;
+    margin-right: 10px;
+  }
 }
 
 .rating {
@@ -101,11 +143,19 @@ body {
   @include h2-styled;
   color: $primary;
   margin-right: 10px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin-right: 5px;
+  }
 }
 
 .star {
   font-size: 14px;
   color: $primary;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 12px;
+  }
 }
 
 .search-result {
@@ -114,6 +164,10 @@ body {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  //
+  //@media screen and (max-width: $minidesktop) and (min-width: $tablet){
+  //  justify-content: space-around;
+  //}
 }
 
 .no-results {
@@ -131,7 +185,11 @@ body {
 }
 
 .pagination-btn {
-  margin-right: 2em;
+  margin-right: 25px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin-right: 15px;
+  }
 }
 
 .pagination {
@@ -162,22 +220,29 @@ body {
 
 .food-type-filter-container {
   @include filter;
-  width: 15em;
+  width: 230px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 180px;
+  }
 }
 
 .rating-filter-container {
   @include filter;
-  width: 10em;
+  width: 150px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 125px;
+  }
 }
 
 .payment-filter-container {
   @include filter;
-  width: 12em;
-}
+  width: 210px;
 
-.payment-filter-container {
-  @include filter;
-  width: 15em;
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 160px;
+  }
 }
 
 .filter-text {
@@ -187,6 +252,10 @@ body {
 
 .filter-icon {
   font-size: 14px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 12px;
+  }
 }
 
 .filter-name {
@@ -198,7 +267,11 @@ body {
 .filters-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    margin-bottom: 30px;
+  }
 }
 
 .food-filter {
@@ -214,9 +287,18 @@ body {
 
   &.open {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    height: 500px;
+    top: 162px;
+    overflow: scroll;
+    width: 560px;
+    padding: 15px;
   }
 }
 
@@ -239,6 +321,13 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    top: 162px;
+    left: 272px;
+    padding: 15px;
+    width: 130px;
+  }
 }
 
 .payment-filter {
@@ -260,6 +349,13 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    top: 162px;
+    left: 448px;
+    padding: 15px;
+    width: 165px;
+  }
 }
 
 .food-facet  {
@@ -273,20 +369,24 @@ body {
   cursor: pointer;
   margin-bottom: 5px;
   border: 1px solid $fieldBackground;
-  border-radius: 10px;
+  border-radius: 15px;
 
   &:hover{
     background-color: $primaryDisabled;
-    border-radius: 15px;
     border: none;
     color: $primary
   }
 
   &.selected {
     background-color: $primaryDisabled;
-    border-radius: 15px;
     border: none;
     color: $primary
+  }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 150px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
   }
 }
 
@@ -336,6 +436,13 @@ body {
     background-color: $primaryDisabled;
     border: none;
   }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 60px;
+    height: 44px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+  }
 }
 
 .payment-filter-item {
@@ -362,6 +469,12 @@ body {
     background-color: $primaryDisabled;
     border: none;
   }
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    width: 162px;
+    height: 44px;
+    margin-bottom: 8px;
+  }
 }
 
 .rating-filter-name {
@@ -375,6 +488,12 @@ body {
 .rating-filter-star {
   font-size: 12px;
   margin-right: 5px;
+
+  @media screen and (max-width: $minidesktop) and (min-width: $tablet){
+    font-size: 10px;
+    margin-right: 4px;
+  }
+
 }
 
 .payment-filter-icon {
