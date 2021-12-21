@@ -171,6 +171,7 @@ body {
   border: 1px solid #818a95;
   color: #182e47;
   margin-right: 20px;
+  cursor: pointer;
   width: 15em; }
   .food-type-filter-container.selected {
     background-color: #fffcf0;
@@ -188,6 +189,7 @@ body {
   border: 1px solid #818a95;
   color: #182e47;
   margin-right: 20px;
+  cursor: pointer;
   width: 10em; }
   .rating-filter-container.selected {
     background-color: #fffcf0;
@@ -205,6 +207,7 @@ body {
   border: 1px solid #818a95;
   color: #182e47;
   margin-right: 20px;
+  cursor: pointer;
   width: 12em; }
   .payment-filter-container.selected {
     background-color: #fffcf0;
@@ -222,6 +225,7 @@ body {
   border: 1px solid #818a95;
   color: #182e47;
   margin-right: 20px;
+  cursor: pointer;
   width: 15em; }
   .payment-filter-container.selected {
     background-color: #fffcf0;
@@ -250,9 +254,9 @@ body {
 
 .food-filter {
   display: none;
-  height: 670px;
+  height: 582px;
   top: 194px;
-  width: 850px;
+  width: 1010px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
@@ -307,14 +311,20 @@ body {
   width: 160px;
   padding: 5px 15px;
   align-items: center;
-  color: #182e47; }
+  color: #182e47;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border: 1px solid #f7f9fa;
+  border-radius: 10px; }
   .food-facet:hover {
     background-color: #fffcf0;
     border-radius: 15px;
+    border: none;
     color: #f8d16c; }
   .food-facet.selected {
     background-color: #fffcf0;
     border-radius: 15px;
+    border: none;
     color: #f8d16c; }
 
 .food-facet-text {
@@ -354,7 +364,8 @@ body {
   margin-bottom: 10px;
   border-radius: 15px;
   border: 1px solid #f7f9fa;
-  color: #182e47; }
+  color: #182e47;
+  cursor: pointer; }
   .rating-filter-score.selected {
     color: #f8d16c;
     background-color: #fffcf0;
@@ -374,7 +385,8 @@ body {
   margin-bottom: 10px;
   border-radius: 15px;
   border: 1px solid #f7f9fa;
-  color: #182e47; }
+  color: #182e47;
+  cursor: pointer; }
   .payment-filter-item.selected {
     color: #f8d16c;
     background-color: #fffcf0;
@@ -403,4 +415,20 @@ body {
 .payment-filter-icon {
   font-size: 14px;
   margin-right: 10px; }
+
+.clear-all-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #42576e; }
+  .clear-all-button.is-disabled {
+    color: #818a95;
+    pointer-events: none; }
+
+.clear-button-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
 
